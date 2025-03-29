@@ -1,17 +1,18 @@
 
-.inter-uniquifier {
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-.style{
-    font-family: 'inter', sans-serif;
+body{
+    font-family: 'Inter', sans-serif;
     
 }
 
 section{
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -62,7 +63,8 @@ section{
 .main-title{
     padding-top: 67px;
     color: #2B2D35;
-    font-size: 80px;
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 .main-subtitle{
@@ -70,3 +72,274 @@ section{
     font-size: 20px;
     font-family: "Comfortaa";
 }
+
+.button{
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    background-color: #BBFF2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0 #000000;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.button{
+    transition-duration: 0.3s;
+}
+
+.button:hover{
+    background: #a0d826;
+}
+
+
+
+
+
+.title{
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+}
+
+.about-content{
+    width: 35%;
+    height: 270px;
+    background-color: #792AFF;
+    padding-left: 40px;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+}
+
+.about-title{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa';
+}
+
+.about-card{
+    background-image: url(img/form2.png);
+    background-repeat: no-repeat;
+    width: 376px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'Comafortaa';
+}
+
+.about-card img{
+    padding-bottom: 15px;
+}
+
+.skills-card{
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Comfortaa';
+}
+
+.moving-planet2{
+    background-image: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+
+.moving-planet, .moving-planet2{
+    animation-name: planet-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.moving-planet{
+    background: url(/img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+@keyframes planet-move{
+    from{transform: translateY(0px);}
+    to {transform:translateY(70px) ;}
+}
+
+.works-block img{
+    margin: 0 20px;
+    width: 27%;
+    box-shadow: 7px 7px #000000;
+}
+
+.comments-block{
+    justify-content: space-evenly;
+    max-width: 1150PX;
+    margin: auto;
+}
+
+.comment-card{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.comment-card h3{
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    padding: 10px;
+}
+
+.comment-card p{
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 327px;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.comment p{
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    max-width: 250px;
+}
+
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+
+.footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+}
+
+.footer-year p{
+    font-family:'Comfortaa' ;
+    letter-spacing: 1,5px;
+}
+
+.footer-links a{
+    margin-right: 15px;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+}
+
+.nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo{
+    color: #BBFF2C;
+    font-size: 80px;
+    padding-left: 50px;
+}
+
+.active{
+    background-color: #BBFF2C;
+    background-size: 1920px 1080px;
+}
+
